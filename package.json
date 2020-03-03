@@ -1,0 +1,50 @@
+{
+  "name": "react-isomorph",
+  "version": "0.0.0",
+  "description": "Isomorphic React Example",
+  "main": "app.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm install"
+  },
+  "author": "Ken Wheeler",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^1.2.2",
+    "http": "0.0.0",
+    "mongodb": "^3.5.4",
+    "mongoose": "^4.13.20",
+    "node-jsx": "^0.12.4",
+    "prompt": "^1.0.0",
+    "react": "~0.14.6",
+    "socket.io": "^1.1.0",
+    "twitter": "^1.7.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "~1.1.1",
+    "uglify-js": "~2.4.15",
+    "watchify": "^3.1.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotch-io/react-tweets.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/scotch-io/react-tweets/issues"
+  },
+  "homepage": "https://github.com/scotch-io/react-tweets#readme"
+}
