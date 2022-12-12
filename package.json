@@ -14,7 +14,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^1.2.2",
     "http": "0.0.0",
     "mongodb": "^3.5.4",
